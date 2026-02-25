@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ms Kathi Book Store | Khan Market</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-paper text-text-neutral selection:bg-amber-200 antialiased" style="background: #f9f5ee;">
+  <header class="w-full sticky top-0 z-50 bg-white bg-opacity-90 backdrop-blur shadow">
+    <nav class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <span class="brand-dot w-3 h-3 bg-amber-600 rounded-full"></span>
+        <div class="text-xl font-semibold" style="font-family: 'Playfair Display', serif;">
+          Ms Kathi Book Store
+        </div>
+      </div>
+      <ul class="hidden md:flex items-center gap-6 text-sm uppercase tracking-wide" id="main-nav">
+        <li><a href="#hero" class="nav-link hover-underline">Home</a></li>
+        <li><a href="#about" class="nav-link hover-underline">About</a></li>
+        <li><a href="#collection" class="nav-link hover-underline">Collection</a></li>
+        <li><a href="#ambience" class="nav-link hover-underline">Ambience</a></li>
+        <li><a href="#why_visit" class="nav-link hover-underline">Why Visit</a></li>
+        <li><a href="#enquiry" class="nav-link hover-underline">Enquiry</a></li>
+        <li><a href="#testimonials" class="nav-link hover-underline">Testimonials</a></li>
+        <li><a href="#contact" class="nav-link hover-underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="hero" class="relative overflow-hidden h-[78vh] md:h-[88vh] bg-cover bg-center"
+      style="background-image: url('https://i.insider.com/63b78a0164499e001852d99e?width=1200&format=jpeg');">
+      <div class="absolute inset-0 bg-black/40"></div>
+      <div class="relative z-10 flex items-center justify-center h-full px-6">
+        <div class="text-center max-w-3xl text-white">
+          <h1 class="text-4xl md:text-6xl font-serif font-bold drop-shadow-lg" style="color: #f8f0e0;">
+            Step Into a World of Literary Magic
+          </h1>
+          <p class="mt-4 text-lg md:text-xl opacity-95" style="color: #f6f0db;">
+            A Timeless Bookstore Experience in the Heart of Khan Market
+          </p>
+          <div class="mt-8 flex flex-wrap justify-center gap-4">
+            <a href="#enquiry" class="btn-primary">Enquire About a Book</a>
+            <a href="#collection" class="btn-secondary">Explore Our Collection</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="py-20 bg-paper">
+      <div class="max-w-6xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">A Home for Readers, a Maze of Stories</h2>
+        <div id="about-content" class="prose lg:prose-lg" data-reveal="true"></div>
+      </div>
+    </section>
+
+    <!-- BOOK COLLECTION -->
+    <section id="collection" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">Book Collection</h2>
+        <p class="text-gray-700 mb-8">Fiction • Classic Literature • Non-Fiction • Rare Books</p>
+        <div id="collection-grid" class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4"></div>
+      </div>
+    </section>
+
+    <!-- AMBIENCE / GALLERY -->
+    <section id="ambience" class="py-20 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">Ambience Gallery</h2>
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+          <img src="https://media.gettyimages.com/id/2199890170/photo/srinagar-jammu-and-kashmir-india-a-kashmiri-man-reads-a-book-at-a-bookstore-in-srinagar.jpg?s=612x612&w=0&k=20&c=-BSRu_EtEp_KGXcR6OMuhWgkytLV7_-A3xy6AA-QBqM=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/2228172860/photo/a-shopkeeper-waits-for-customers-at-a-bookshop-in-srinagar-on-august-7-2025-indian.jpg?s=612x612&w=0&k=20&c=eyRxSXxrw1wPFvz8tEs50zXirkKthnRW2f3BoIqRfzI=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/1197265944/photo/various-books-together-abstract-background-of-books.jpg?s=612x612&w=0&k=20&c=8mSshQALoZfmKDukDe9GE2pTj41Uacjk1Qd_NdkpjRQ=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/95797381/photo/gurgaon-india-books-are-displayed-at-the-quill-and-canvas-book-store-in-gurgaon-on-january-12.jpg?s=612x612&w=0&k=20&c=4wBgitJpG2KiaaGBlikKviojI1HUdPb3sJ7dGUeISU4=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/2228190515/photo/a-man-browses-books-at-a-bookshop-in-srinagar-jammu-and-kashmir-on-august-7-2025-india-bans.jpg?s=612x612&w=0&k=20&c=Ft6pleYJjgON6ssjEIXz9NcKB4-riE11myh4ZWcnMYQ=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/523557910/photo/a-book-store-india.jpg?s=612x612&w=0&k=20&c=fHuYvgUkJBrrotGd6c6gKoZA4RweD7K-3FnLicpOr8M=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/2229113519/photo/a-bookstore-is-photographed-in-srinagar-kashmir-india-on-august-12-2025-the-government-of.jpg?s=612x612&w=0&k=20&c=nUcPhyObALdnHyM2wL2o4m22ohYqTT9zCotKbGgbtE4=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+          <img src="https://media.gettyimages.com/id/968720790/photo/in-this-picture-taken-on-may-30-a-copy-of-the-book-the-spy-chronicles-raw-isi-and-the-illusion.jpg?s=612x612&w=0&k=20&c=PfEnteQchkVDXn5gCxOfvbw5KB71nvlcDD4vcvCjtX8=" alt="" class="rounded shadow-md object-cover h-40 w-full">
+        
+      </div>
+    </section>
+
+    <!-- WHY VISIT -->
+    <section id="why_visit" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">Why Visit Ms Kathi</h2>
+        <ul class="list-disc pl-6 space-y-2 text-gray-800" data-reveal="true">
+          <li>Huge variety of books across fiction, classics, and rare editions</li>
+          <li>Welcoming environment with warm lighting and cozy aisles</li>
+          <li>Social media worthy interiors for timeless photography</li>
+          <li>A hidden literary gem in Khan Market with character and history</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ENQUIRY -->
+    <section id="enquiry" class="py-20 bg-paper">
+      <div class="max-w-4xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">Book Enquiry</h2>
+        <form id="enquiry-form" class="grid grid-cols-1 md:grid-cols-2 gap-4" autocomplete="off">
+          <input name="name" placeholder="Name" class="input" required />
+          <input name="phone" placeholder="Phone" class="input" required />
+          <input name="email" placeholder="Email" class="input" type="email" required />
+          <input name="book_name" placeholder="Book Name" class="input" required />
+          <input name="author_name" placeholder="Author Name" class="input" />
+          <textarea name="message" placeholder="Message" class="input h-28"></textarea>
+          <div class="md:col-span-2 flex justify-end">
+            <button type="submit" class="btn-primary w-full md:w-auto">Send Enquiry</button>
+          </div>
+        </form>
+        <div id="toast" class="mt-4 hidden p-3 bg-amber-100 rounded border border-amber-200 text-amber-800" role="status">
+          Enquiry sent successfully
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="py-20 bg-slate-50">
+      <div class="max-w-6xl mx-auto px-6 md:px-4">
+        <h2 class="text-3xl md:text-4xl font-serif mb-6" style="color:#1b1b1b;">What Readers Say</h2>
+        <div class="relative overflow-hidden rounded-md shadow-lg bg-white p-4" style="min-height: 180px;">
+          <div id="testimonials-container" class="flex transition-transform duration-500" style="gap:1rem;">
+            <!-- slides injected here -->
+          </div>
+          <div class="absolute inset-y-0 left-0 my-auto w-full flex justify-between px-2">
+            <button id="prev" aria-label="Previous" class="p-2 rounded-full bg-white/80 hover:bg-white shadow">‹</button>
+            <button id="next" aria-label="Next" class="p-2 rounded-full bg-white/80 hover:bg-white shadow">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-6 md:px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h2 class="text-3xl md:text-4xl font-serif mb-4" style="color:#1b1b1b;">Visit Us</h2>
+          <p class="text-gray-700 mb-4">
+            Khan Market, New Delhi
+          </p>
+          <p class="text-gray-700">Phone: +91 847591605</p>
+          <p class="text-gray-700 mb-4">Email: mskathibookstore@gmail.com</p>
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://www.google.com/maps?q=Khan+Market+New+Delhi&output=embed"
+              width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+        </div>
+        <div class="self-center">
+          <img src="https://images.unsplash.com/photo-1526312426127-7fda3a4a56a6?auto=format&fit=crop&w=900&q=80" alt=""
+               class="rounded shadow-md w-full" style="max-width: 720px;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-6 text-center text-sm text-gray-600">
+    © <span id="year"></span> Ms Kathi Book Store, Khan Market, New Delhi
+  </footer>
+
+  <script type="module" src="./js/main.js"></script>
+  <script>
+    if (typeof lucide !== 'undefined') { lucide.createIcons(); }
+  </script>
+</body>
+</html>
